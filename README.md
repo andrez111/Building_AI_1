@@ -1,32 +1,30 @@
 # Building_AI_1
 Draft project for Reaktor - Building AI Course
 
-<!-- This is the markdown template for the final project of the Building AI course, 
-created by Reaktor Innovations and University of Helsinki. 
-Copy the template, paste it to your GitHub README and edit! -->
-
 # Project Title
 
-Final project for the Building AI course
+Non-Performing Loans Predictor
 
 ## Summary
 
-Describe briefly in 2-3 sentences what your project is about. About 250 characters is a nice length! 
-
+Our Algorithm aims to predict the status of existing credit lines, giving back the probability that credit will become NPL. This can give to financial institutions and citizens the possibility to avoid risks.
 
 ## Background
 
-Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
+NPLs are the most poisoning and dangerous category of assets in the financial system. Their low probability of repayment affects the balance sheet of banks, posing at risk their ability to fully function as financial lenders.
 
-This is how you make a list, if you need one:
-* problem 1
-* problem 2
-* etc.
-
+* Problem: Avoid NPLs by assign them a probabilty of default.
+* Frequency: in the EU Zone, up to 2019, there are more than 600 Billion of NPLs
+* Motivation: Italian credit system is under pressure due to the massive presence of NPLs in Banks balance sheets. This led to a constant credit shortage on the retail market and higher intrest rates for borrowers.
 
 ## How is it used?
 
-Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
+PROCESS:
+   * Define the financial variables that are used to reach the classification of NPL.
+   * Define the dataset of publicly available information that can populate the model (training, test and dev data)
+   * 
+
+  Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
 
 Images will make your README look nice!
 Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
