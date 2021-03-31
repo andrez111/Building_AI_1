@@ -22,56 +22,50 @@ NPLs are the most poisoning and dangerous category of assets in the financial sy
 PROCESS:
    * Define the financial variables that are used to reach the classification of NPL.
    * Define the dataset of publicly available information that can populate the model (training, test and dev data)
-   * 
-
-  Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
+   * Set the tolerance in order to tag the acceptable risk level.
 
 <img src=https://github.com/andrez111/Building_AI_1/blob/main/Building%20AI%201.png>
 
-If you need to resize images, you have to use an HTML tag, like this:
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg" width="300">
+ Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
 
-This is how you create code examples:
-```
-def main():
-   countries = ['Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden']
-   pop = [5615000, 5439000, 324000, 5080000, 9609000]   # not actually needed in this exercise...
-   fishers = [1891, 2652, 3800, 11611, 1757]
+* Step 1: extract anonymized credit data from public databases.
+                                                               
+* Step 2: Define the set of variables to be analyzed: 
+  > A) past credit history
+  > B) number of financing events in life 
+  > C) payment score: sum of days of overdue
 
-   totPop = sum(pop)
-   totFish = sum(fishers)
+* Step 3: Apply a Naive Bayes classifier to filter over a set confidence level each variable.
 
-   # write your solution here
+* Step 4: If the variable is accepted, we can use it within a linear regression model setting up relative weights.
 
-   for i in range(len(countries)):
-      print("%s %.2f%%" % (countries[i], 100.0))    # current just prints 100%
-
-main()
-```
+The model can be used during credit evaluation performed by banks and financial professioanls, both with individuals and corporations. 
+We should take into account the availabilty of fresh data, and the fact that the purchasing power can change over time.
 
 
 ## Data sources and AI methods
 Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
 If you need to use links, here's an example:
-[Twitter API](https://developer.twitter.com/en/docs)
+[Crif API](https://www.crif.it/consumatori/il-sistema-di-informazioni-creditizie/)
+[Banca D'Italia](https://arteweb.bancaditalia.it/arteweb-fe-web/cr)
 
 | Syntax      | Description |
 | ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+| Naive Bayes Class   |  A) |
+| Naive Bayes Class   |  B) |
+| Naive Bayes Class   |  C) |
+
+Linear regression model = Weighted (A + B + C)
 
 ## Challenges
 
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+WE must consider that past history cannot be always a good way to predict the future. From an ethical point of view: if we reduce the impact, on one side, of the NPL problem, on the other side we create a system that can eventually exclude some categories to access credit.
 
-## What next?
+## What's next?
 
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
-
+CODING; CODING and CODING. With a set of skills useful to define the input of the model. 
+We can assume that this NPL prediction model can firstly reduce the risk of contagion within the credit system, and then to create specific instruments to fulfil the needs of least powerful people that have to access credit to change their status.
 
 ## Acknowledgments
 
-* list here the sources of inspiration 
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
+I didn't find the company that I loved to work within, so I create it.
