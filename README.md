@@ -26,7 +26,7 @@ PROCESS:
 
   Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
 
-https://github.com/andrez111/Building_AI_1/blob/main/Building%20AI%201.png
+<img src=https://github.com/andrez111/Building_AI_1/blob/main/Building%20AI%201.png>
 
 If you need to resize images, you have to use an HTML tag, like this:
 <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg" width="300">
